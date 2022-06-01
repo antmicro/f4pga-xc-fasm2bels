@@ -35,7 +35,6 @@ def unpack_tar(tar_file):
     tar = tarfile.open(name=tar_file, mode="r:gz")
     tar.extractall(path=os.path.dirname(tar_file))
 
-
 class TestFasm2Bels(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
